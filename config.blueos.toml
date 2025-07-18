@@ -1,0 +1,23 @@
+# Includes one of the default files in src/bootstrap/defaults
+profile = "library"
+change-id = 133068
+
+[build]
+optimized-compiler-builtins = true
+
+[target.x86_64-unknown-linux-gnu]
+profiler = true
+
+[target.aarch64-apple-darwin]
+profiler = true
+
+[rust]
+omit-git-hash = false
+deny-warnings = false
+
+[dist]
+compression-formats = ["xz"]
+
+[llvm]
+clang = true
+download-ci-llvm = false
